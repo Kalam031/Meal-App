@@ -12,6 +12,7 @@ class CatergoriesScreen extends StatelessWidget {
         ),
       ),
       body: GridView(
+        padding: EdgeInsets.all(25),
         children: DUMMY_CATEGORIES
             .map(
               (catData) => CategoryItem(
