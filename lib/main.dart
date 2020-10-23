@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
       title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.pink,
-        accentColor: Color.fromRGBO(255, 205, 0, 1),
-        canvasColor: Color.fromRGBO(0, 230, 216, 1),
+        accentColor: Colors.amber,
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyText1: TextStyle(
-                color: Color.fromRGBO(14, 210, 223, 1),
+              bodyText2: TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
               ),
               headline6: TextStyle(
                 fontSize: 20,
