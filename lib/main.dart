@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/tabs_screen.dart';
 import './screens/meal_detail_screen.dart';
 import 'screens/category_meals_screen.dart';
 import 'screens/catagories_screen.dart';
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
         accentColor: Color.fromRGBO(255, 205, 0, 1),
+        canvasColor: Color.fromRGBO(0, 230, 216, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: TextStyle(
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
       //home: CatergoriesScreen(),
       //initialRoute: '/',
       routes: {
-        '/': (context) => CatergoriesScreen(),
+        '/': (context) => TabsScreen(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
       },
